@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chandranathan.github.io/chandranathan-s_website/sitemap-index.xml

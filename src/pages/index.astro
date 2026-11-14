@@ -1,8 +1,28 @@
 ---
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const site = Astro.site?.origin ?? '';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Chandranathan Anandavijayan',
+  alternateName: ['A. Chandranathan', 'Chandranathan A.'],
+  jobTitle: 'Ph.D. candidate in Physics',
+  affiliation: {
+    '@type': 'Organization',
+    name: 'International Centre for Theoretical Sciences (ICTS-TIFR)',
+    address: { '@type': 'PostalAddress', addressLocality: 'Bengaluru', addressCountry: 'IN' },
+  },
+  email: 'mailto:chandranathan.a@icts.res.in',
+  image: `${site}${base}/photo.jpg`,
+  url: `${site}${base}/`,
+  knowsAbout: ['Primordial magnetic fields', 'Magnetohydrodynamic turbulence', 'Magnetic reconnection', 'Cosmology'],
+};
 ---
-<Base>
+<Base
+  description="Chandranathan Anandavijayan is a Ph.D. candidate in Physics at ICTS-TIFR, Bengaluru, studying primordial magnetic fields, MHD turbulence and magnetic reconnection."
+  jsonLd={jsonLd}
+>
   <div class="home-grid">
     <aside class="profile">
       <img class="portrait" src={`${base}/photo.jpg`} alt="Portrait of Chandranathan Anandavijayan" width="200" height="200" />
