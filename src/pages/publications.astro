@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import pubs from '../data/publications.json';
+---
+<Base title="Publications">
+  <h1>Publications</h1>
+  <ul class="plain">
+    {pubs.map((p) => (
+      <li>
+        <span class="date">{p.year}</span>
+        <a href={p.url}>{p.title}</a><br />
+        <span class="meta">{p.authors}. <em>{p.venue}</em></span>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import talks from '../data/talks.json';
+---
+<Base title="Talks">
+  <h1>Talks and visits</h1>
+  {Object.entries(talks).map(([group, items]) => (
+    <>
+      <h2>{group}</h2>
+      <ul class="plain">
+        {items.map((t) => (
+          <li>
+            <span class="date">{t.date}</span>
+            {t.title}<br />
+            <span class="meta">{t.place}</span>
+          </li>
+        ))}
+      </ul>
+    </>
+  ))}
+</Base>

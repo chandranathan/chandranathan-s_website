@@ -1,0 +1,20 @@
+{
+  "Talks": [
+    { "date": "Nov 2026", "title": "NORDITA-SU Astrophysics group meeting", "place": "NORDITA, Sweden" },
+    { "date": "May 2026", "title": "COSMOMAG science meeting", "place": "Online" },
+    { "date": "Sep 2025", "title": "Theoretical High Energy Astrophysics Seminar (host: Prof. Lorenzo Sironi)", "place": "Columbia University, US" },
+    { "date": "Sep 2025", "title": "Prof. Nuno Loureiro's group seminar", "place": "MIT PSFC, US" },
+    { "date": "Aug 2025", "title": "State of the Universe seminar (host: Dr. Rishi Khatri)", "place": "TIFR, Mumbai, India" },
+    { "date": "Jul 2025", "title": "Conference talk, “Cosmic Connections: Bridging the Early and Late Universe”", "place": "IMSc, India" },
+    { "date": "Feb 2025", "title": "Physics Department seminar (host: Dr. Luke Chamandy)", "place": "NISER, India" }
+  ],
+  "Conference posters": [
+    { "date": "Sep 2025", "title": "Magnetic Fields and Cosmic Rays across Diverse Scales: What’s Next?", "place": "CfA Harvard, US" },
+    { "date": "Feb 2025", "title": "Astronomical Society of India meeting 2025", "place": "NIT Rourkela, India" },
+    { "date": "Jan 2024", "title": "Astronomical Society of India meeting 2024", "place": "IISc, India" }
+  ],
+  "Academic visits": [
+    { "date": "Sep 2026", "title": "Visiting Prof. Axel Brandenburg (seven weeks)", "place": "NORDITA, Stockholm, Sweden" },
+    { "date": "Aug 2025", "title": "Visiting Prof. Kandaswamy Subramanian (two weeks)", "place": "IUCAA, Pune, India" }
+  ]
+}

@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="CV">
+  <h1>Curriculum vitae</h1>
+  <p><a href={`${base}/cv.pdf`}>Download CV (PDF)</a></p>
+
+  <h2>Education</h2>
+  <ul class="plain">
+    <li>
+      <span class="date">Aug 2022 – present</span>
+      <strong>Ph.D. in Physics</strong>, ICTS-TIFR, Bengaluru<br />
+      <span class="meta">Thesis: Primordial Magnetic Fields: Turbulent Decay, Reconnection Dynamics, and Cosmological Signatures. Advisor: Dr. Pallavi Bhat.</span>
+    </li>
+    <li>
+      <span class="date">Jul 2017 – May 2022</span>
+      <strong>Integrated M.Sc. in Physics, minor in Mathematics</strong>, NISER, Bhubaneswar<br />
+      <span class="meta">Thesis: Dynamics of holographic entanglement entropy for dissipative sound modes. Advisors: Dr. Jyotirmoy Bhattacharya, Dr. Sayantani Bhattacharya.</span>
+    </li>
+  </ul>
+
+  <h2>Awards and grants</h2>
+  <ul class="plain">
+    <li><span class="date">2026</span>Sujatha &amp; Tatineni Premkumar Travel Grant (ICTS), for the visiting PhD fellowship at NORDITA, Stockholm.</li>
+    <li><span class="date">2025</span>International Travel Support, Anusandhan National Research Foundation, for the CfA Harvard meeting (not claimed).</li>
+    <li><span class="date">2022</span>GATE Physics (national rank 17) and CSIR-UGC NET Physical Sciences (national rank 13).</li>
+    <li><span class="date">2022</span>Sarat Chandra–Annapurna Maharana Award, best academic performance in the graduating class, School of Physical Sciences, NISER.</li>
+    <li><span class="date">2017–2022</span>INSPIRE Scholarship for Higher Education (DST, Government of India).</li>
+  </ul>
+
+  <h2>Teaching</h2>
+  <ul class="plain">
+    <li><span class="date">Aug–Dec 2024</span>Teaching Assistant, Advanced Classical Mechanics, ICTS-TIFR.</li>
+    <li><span class="date">Jan–Apr 2025</span>Teaching Assistant, Advanced Classical Electrodynamics, ICTS-TIFR.</li>
+  </ul>
+
+  <h2>Computing</h2>
+  <p>
+    Pencil Code, Athena++, Dedalus, Python (NumPy, SciPy, Matplotlib), Mathematica, Linux, Git, SLURM, MPI, LaTeX.
+  </p>
+
+  <h2>Outreach and service</h2>
+  <ul class="plain">
+    <li><span class="date">2023–2025</span>Co-convener, ICTS Astronomy Club.</li>
+    <li><span class="date">2019–2022</span>Organizer, volunteer and magazine editor, NISER Astronomy Club.</li>
+    <li><span class="date">2024–2025</span>Organized solar observation for National Science Day and a telescope session for the Planetary Parade, ICTS-TIFR.</li>
+  </ul>
+</Base>

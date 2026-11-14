@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base>
+  <div class="home-grid">
+    <aside class="profile">
+      <img class="portrait" src={`${base}/photo.jpg`} alt="Portrait of Chandranathan Anandavijayan" width="200" height="200" />
+      <h1>Chandranathan Anandavijayan</h1>
+      <p class="lead">Ph.D. candidate in Physics<br />International Centre for Theoretical Sciences (ICTS-TIFR), Bengaluru, India</p>
+      <p class="quick">
+        <a href={`${base}/cv`}>CV</a>
+        <a href={`${base}/publications`}>Publications</a>
+        <a href="mailto:chandranathan.a@icts.res.in">Email</a>
+      </p>
+    </aside>
+
+    <div class="about">
+      <h2 class="first">About</h2>
+      <p>
+        I study primordial magnetic fields and cosmic magnetism: the nonlinear evolution of magnetically dominated
+        MHD turbulence, magnetic reconnection, and the effect of primordial fields on cosmological recombination.
+        My work combines analytical modelling with large-scale numerical simulations.
+      </p>
+      <p>
+        My advisor is <strong>Dr. Pallavi Bhat</strong>. I am on the postdoctoral job market for 2027.
+        See my <a href={`${base}/research`}>research</a> for more.
+      </p>
+
+      <h2>News</h2>
+      <ul class="plain">
+        <li><span class="date">2026</span>Paper on reconnection-mediated decay in magnetically dominated turbulence accepted to ApJ (arXiv:2601.17955).</li>
+        <li><span class="date">Sep 2026</span>Seven-week visit to Prof. Axel Brandenburg at NORDITA, Stockholm.</li>
+      </ul>
+    </div>
+  </div>
+</Base>
